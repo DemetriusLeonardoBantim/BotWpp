@@ -4,13 +4,13 @@ import time
 class wppBot:
     def __init__(self):
         self.mensagem = "Coloque a mensagem desejada"
-        self.grupos = ["Oi"]
+        self.grupos = ["Coloque o nome do grupo aqui"]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
         self.driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
     def EnviarMensagens(self):
-        #<span dir="auto" title="Amoreco" class="_3ko75 _5h6Y_ _3Whw5">Amoreco</span>
+        #<span dir="auto" title="######" class="_3ko75 _5h6Y_ _3Whw5">#####</span>
         #<div tabindex="-1" class="_3uMse">
         #<span data-testid="send" data-icon="send" class="">
         self.driver.get('https://web.whatsapp.com/')
